@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Dirtchunk";
+  src: url(/Dirtchunk-0W0AR.otf) format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -10,13 +17,8 @@ body {
     rgba(254, 153, 30, 0.746),
     rgba(254, 153, 30, 0.344)
   );
-}
-
-@font-face {
-  font-family: "Dirtchunk";
-  src: url(/Dirtchunk-0W0AR.otf) format("opentype");
-  font-weight: 600;
-  font-style: normal;
+  font-family: Dirtchunk, Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 #background-video {
@@ -41,17 +43,93 @@ h1 {
   grid-template-columns: 40% 60%;
   background: linear-gradient(
     to left,
-    rgba(254, 153, 30, 0.866),
+    rgba(254, 153, 30, 0.785),
     rgba(254, 153, 30, 0.134)
   );
 }
 
 .grid-left {
-  /* border: 2px solid white; */
   height: 100vh;
 }
 
 .grid-right {
-  /* border: 2px solid white; */
-  /* background-color: rgba(254, 153, 30, 0.5); */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 40% 30%;
+}
+
+.top-header {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  /* border: 1px solid white; */
+  padding-left: 1.5rem;
+}
+
+.middle-form {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* border: 1px solid white; */
+}
+
+.bottom-footer {
+  /* border: 1px solid white; */
+}
+
+input {
+  display: block;
+  width: 15rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  text-align: left;
+}
+
+input:focus {
+  border: 2px solid rgba(163, 16, 182, 0.582);
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+.form {
+  /* background-color: rgba(163, 16, 182, 0.582); */
+  width: 100%;
+}
+
+.form-grid {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.form-field {
+  text-align: left;
+  margin: 0.5rem 1.5rem;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: rgb(162, 16, 182);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
+  padding: 0.6rem 2.5rem;
+}
+
+.btn:hover {
+  background-color: rgb(87, 17, 97);
+}
+
+.log-in {
+  font-size: 1.35rem;
+  margin-left: 1.5rem;
+}
+
+.log-in a {
+  cursor: pointer;
+  color: rgb(232, 99, 249);
 }
