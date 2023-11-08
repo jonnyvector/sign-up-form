@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(
+    to left,
+    rgba(254, 153, 30, 0.746),
+    rgba(254, 153, 30, 0.344)
+  );
+}
+
+@font-face {
+  font-family: "Dirtchunk";
+  src: url(/Dirtchunk-0W0AR.otf) format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+h1 {
+  font-family: Dirtchunk, Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background: linear-gradient(
+    to left,
+    rgba(254, 153, 30, 0.866),
+    rgba(254, 153, 30, 0.134)
+  );
+}
+
+.grid-left {
+  /* border: 2px solid white; */
+  height: 100vh;
+}
+
+.grid-right {
+  /* border: 2px solid white; */
+  /* background-color: rgba(254, 153, 30, 0.5); */
+}
