@@ -43,8 +43,8 @@ h1 {
   grid-template-columns: 40% 60%;
   background: linear-gradient(
     to left,
-    rgba(254, 153, 30, 0.785),
-    rgba(254, 153, 30, 0.134)
+    rgba(0, 0, 0, 0.665),
+    rgba(0, 0, 0, 0.031)
   );
 }
 
